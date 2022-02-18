@@ -47,6 +47,35 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		945E342627C0277200782167 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				94EA548727BEAC5C0011744F /* DataManager.swift */,
+				94EA548927BED89B0011744F /* Person.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		945E342727C0278800782167 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				94EA547E27BEA54D0011744F /* LaunchScreen.storyboard */,
+				94EA547927BEA54D0011744F /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		945E342827C0279800782167 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				94EA548B27BEE0950011744F /* TabBarViewController.swift */,
+				94EA548D27BEE33D0011744F /* ContactListTableViewController.swift */,
+				94E1DF0627C01DAE00C0EBB2 /* ContactDetailsViewController.swift */,
+				94E1DF0827C01EA200C0EBB2 /* SectionTableViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
 		94EA546727BEA54D0011744F = {
 			isa = PBXGroup;
 			children = (
@@ -66,17 +95,12 @@
 		94EA547227BEA54D0011744F /* ContactList */ = {
 			isa = PBXGroup;
 			children = (
+				945E342827C0279800782167 /* Controllers */,
+				945E342727C0278800782167 /* View */,
+				945E342627C0277200782167 /* Model */,
 				94EA547327BEA54D0011744F /* AppDelegate.swift */,
 				94EA547527BEA54D0011744F /* SceneDelegate.swift */,
-				94EA548B27BEE0950011744F /* TabBarViewController.swift */,
-				94EA548D27BEE33D0011744F /* ContactListTableViewController.swift */,
-				94E1DF0627C01DAE00C0EBB2 /* ContactDetailsViewController.swift */,
-				94E1DF0827C01EA200C0EBB2 /* SectionTableViewController.swift */,
-				94EA548727BEAC5C0011744F /* DataManager.swift */,
-				94EA548927BED89B0011744F /* Person.swift */,
 				94EA547C27BEA54D0011744F /* Assets.xcassets */,
-				94EA547E27BEA54D0011744F /* LaunchScreen.storyboard */,
-				94EA547927BEA54D0011744F /* Main.storyboard */,
 				94EA548127BEA54D0011744F /* Info.plist */,
 			);
 			path = ContactList;
