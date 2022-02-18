@@ -40,21 +40,49 @@
             </objects>
             <point key="canvasLocation" x="3378" y="-314"/>
         </scene>
-        <!--View Controller-->
+        <!--Contact Details View Controller-->
         <scene sceneID="kuC-Ye-qEb">
             <objects>
-                <viewController id="NGg-LL-0Sl" sceneMemberID="viewController">
+                <viewController id="NGg-LL-0Sl" customClass="ContactDetailsViewController" customModule="ContactList" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="LHR-WT-7PS">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="26" translatesAutoresizingMaskIntoConstraints="NO" id="W0I-Ic-oJc">
+                                <rect key="frame" x="20" y="190" width="374" height="74"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="email" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tei-Iw-I0T">
+                                        <rect key="frame" x="0.0" y="0.0" width="374" height="24"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="phone" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Dhj-Vp-yNz">
+                                        <rect key="frame" x="0.0" y="50" width="374" height="24"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="uDX-yl-5Pc"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="W0I-Ic-oJc" firstAttribute="leading" secondItem="uDX-yl-5Pc" secondAttribute="leading" constant="20" id="DSO-PA-ZOF"/>
+                            <constraint firstItem="uDX-yl-5Pc" firstAttribute="trailing" secondItem="W0I-Ic-oJc" secondAttribute="trailing" constant="20" id="Plh-AS-tRt"/>
+                            <constraint firstItem="W0I-Ic-oJc" firstAttribute="top" secondItem="uDX-yl-5Pc" secondAttribute="top" constant="50" id="mNp-Aw-kfO"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="BK5-6i-bJI"/>
+                    <connections>
+                        <outlet property="emailLabel" destination="tei-Iw-I0T" id="di3-fs-72G"/>
+                        <outlet property="phoneLabel" destination="Dhj-Vp-yNz" id="RNk-80-vbS"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uht-S0-eha" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4254" y="-314"/>
+            <point key="canvasLocation" x="4253.623188405797" y="-314.0625"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="a4r-R7-YIu">
@@ -79,6 +107,7 @@
                     <toolbarItems/>
                     <navigationItem key="navigationItem" title="Contacts List" id="Dlx-Sg-NXe"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="W39-L4-CV3">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>
@@ -94,13 +123,13 @@
         <!--Contacts-->
         <scene sceneID="3In-4d-aEw">
             <objects>
-                <tableViewController id="Apx-ZZ-4gC" sceneMemberID="viewController">
+                <tableViewController id="Apx-ZZ-4gC" customClass="SectionTableViewController" customModule="ContactList" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="Zj4-I5-NsK">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="auB-lV-xxu">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" id="auB-lV-xxu">
                                 <rect key="frame" x="0.0" y="44.5" width="414" height="43.5"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="auB-lV-xxu" id="4XG-4n-mZq">

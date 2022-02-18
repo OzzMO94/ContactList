@@ -37,7 +37,3 @@ extension Person {
     }
 }
 
-enum Contacts: String {
-    case phone = "Phone"
-    case email = "try"
-}

@@ -7,9 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		94E1DF0727C01DAE00C0EBB2 /* ContactDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94E1DF0627C01DAE00C0EBB2 /* ContactDetailsViewController.swift */; };
+		94E1DF0927C01EA200C0EBB2 /* SectionTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94E1DF0827C01EA200C0EBB2 /* SectionTableViewController.swift */; };
 		94EA547427BEA54D0011744F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94EA547327BEA54D0011744F /* AppDelegate.swift */; };
 		94EA547627BEA54D0011744F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94EA547527BEA54D0011744F /* SceneDelegate.swift */; };
-		94EA547827BEA54D0011744F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94EA547727BEA54D0011744F /* ViewController.swift */; };
 		94EA547B27BEA54D0011744F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 94EA547927BEA54D0011744F /* Main.storyboard */; };
 		94EA547D27BEA54D0011744F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 94EA547C27BEA54D0011744F /* Assets.xcassets */; };
 		94EA548027BEA54D0011744F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 94EA547E27BEA54D0011744F /* LaunchScreen.storyboard */; };
@@ -20,10 +21,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		94E1DF0627C01DAE00C0EBB2 /* ContactDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactDetailsViewController.swift; sourceTree = "<group>"; };
+		94E1DF0827C01EA200C0EBB2 /* SectionTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionTableViewController.swift; sourceTree = "<group>"; };
 		94EA547027BEA54D0011744F /* ContactList.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ContactList.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		94EA547327BEA54D0011744F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		94EA547527BEA54D0011744F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		94EA547727BEA54D0011744F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		94EA547A27BEA54D0011744F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		94EA547C27BEA54D0011744F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		94EA547F27BEA54D0011744F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -66,9 +68,10 @@
 			children = (
 				94EA547327BEA54D0011744F /* AppDelegate.swift */,
 				94EA547527BEA54D0011744F /* SceneDelegate.swift */,
-				94EA547727BEA54D0011744F /* ViewController.swift */,
 				94EA548B27BEE0950011744F /* TabBarViewController.swift */,
 				94EA548D27BEE33D0011744F /* ContactListTableViewController.swift */,
+				94E1DF0627C01DAE00C0EBB2 /* ContactDetailsViewController.swift */,
+				94E1DF0827C01EA200C0EBB2 /* SectionTableViewController.swift */,
 				94EA548727BEAC5C0011744F /* DataManager.swift */,
 				94EA548927BED89B0011744F /* Person.swift */,
 				94EA547C27BEA54D0011744F /* Assets.xcassets */,
@@ -151,11 +154,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				94EA548A27BED89B0011744F /* Person.swift in Sources */,
-				94EA547827BEA54D0011744F /* ViewController.swift in Sources */,
 				94EA548E27BEE33D0011744F /* ContactListTableViewController.swift in Sources */,
 				94EA548827BEAC5C0011744F /* DataManager.swift in Sources */,
 				94EA547427BEA54D0011744F /* AppDelegate.swift in Sources */,
 				94EA548C27BEE0950011744F /* TabBarViewController.swift in Sources */,
+				94E1DF0727C01DAE00C0EBB2 /* ContactDetailsViewController.swift in Sources */,
+				94E1DF0927C01EA200C0EBB2 /* SectionTableViewController.swift in Sources */,
 				94EA547627BEA54D0011744F /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
